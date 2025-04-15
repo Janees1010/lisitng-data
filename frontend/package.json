@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "test": "jest",
-    "test home" : "npx jest Home.test.js",
+    "test home": "npx jest Home.test.js",
     "test:watch": "jest --watch"
   },
   "dependencies": {

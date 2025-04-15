@@ -72,6 +72,7 @@ describe("asyncrounous functions testing", () => {
     //     const data = await fetchData()
     //     expect(data).toEqual("helloworld")
     // })
+    
     beforeEach(()=>{
         render(<Home />)
     })

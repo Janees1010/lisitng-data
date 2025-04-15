@@ -1,21 +1,21 @@
 import React, { useState } from 'react'
 
 const Home = () => {
-  const [state,setState] = useState([])
+  const [state,setState] = useState("")
 
   return (
     <div>
        <h1>home</h1>
        <input onChange={(e)=>setState((pre)=>[...pre,e.target.value])} placeholder='enter name' type="text" />
-       <button disabled={state === ""}>test</button>
+       <button disabled={state == ""}>test</button>
 
        
         <ul data-testid="noteslist">
             {
               state && state.length > 0 ? 
-                   state.map((note)=>{
+                   state.map((note,i)=>{
                        return(
-                         <li>{note}</li>
+                         <li key={i} >{note}</li>
                        )
                    })
               : ""

@@ -16,10 +16,10 @@ describe("testing home component",()=>{
        const btn = screen.getByRole("button")
        expect(btn).toBeInTheDocument()
      })
-    //  it("checking if the button is disabled",()=>{
-    //    const btn = screen.getByRole("button")
-    //    expect(btn).toBeDisabled()
-    //  })
+     it("checking if the button is disabled",()=>{
+       const btn = screen.getByRole("button")
+       expect(btn).toBeDisabled()
+     })
      it("checking if the button enabling while filling input",()=>{
        const inputField = screen.getByPlaceholderText(/enter name/i)
        fireEvent.change(inputField,{target:{value:"test 123"}})
